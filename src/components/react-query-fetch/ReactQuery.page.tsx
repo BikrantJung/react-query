@@ -10,7 +10,14 @@ async function getPosts() {
 }
 
 function ReactQuery() {
-  const { data, isLoading } = useQuery<PostsEntity[]>(["posts"], getPosts);
+  /**
+   * Stale Time is the time data gets stale and again refetched on comonent mount
+   * Cache Time is the time in which data will be deleted from the cache and again refetched
+   */
+
+  const { data, isLoading } = useQuery<PostsEntity[]>(["posts"], getPosts, {
+    staleTime: 5 * 60 * 1000,
+  });
   if (isLoading) return <div>Loading...</div>;
   if (!data) return <div>Data not Found</div>;
   return (
