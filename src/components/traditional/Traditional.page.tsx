@@ -10,7 +10,7 @@ function TraditionalPage() {
     <div className="flex items-center justify-center mt-4">
       <div className="flex flex-col gap-4">
         {data.map((item) => {
-          return <PostCard {...item} key={item.post_id} />;
+          return <PostCard {...item} key={item.id} />;
         })}
       </div>
     </div>
