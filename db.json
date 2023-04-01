@@ -2,7 +2,7 @@
   "posts": [
     {
       "post_id": 1,
-      "post_title": "This is amazing new post lol",
+      "post_title": "This is amazing new post lol 1",
       "post_likes": 234,
       "post_user": "Bikrant J."
     },
@@ -29,6 +29,33 @@
       "post_title": "Everyone is busy in their own work",
       "post_likes": 739,
       "post_user": "Geeta N."
+    }
+  ],
+  "users": [
+    {
+      "user_id": 1,
+      "email": 234,
+      "username": "Bikrant J."
+    },
+    {
+      "user_id": 2,
+      "email": 123,
+      "username": "Ramu K."
+    },
+    {
+      "user_id": 3,
+      "email": 2343,
+      "username": "Shyamu L."
+    },
+    {
+      "user_id": 4,
+      "email": 3,
+      "username": "Hari M."
+    },
+    {
+      "user_id": 5,
+      "email": 739,
+      "username": "Geeta N."
     }
   ]
 }

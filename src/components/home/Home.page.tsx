@@ -17,10 +17,13 @@ function Home() {
           <li className={className}>
             <Link to="/react-query-fetch">React Query Fetch</Link>
           </li>
+          <li className={className}>
+            <Link to="/parallel-queries">Parallel Queries</Link>
+          </li>
         </ul>
       </nav>
       <div>
-        <h1 className="text-4xl text-center font-serif mt-3">
+        <h1 className="text-4xl text-center font-serif">
           Welcome to React Query Class
         </h1>
       </div>
