@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "post_id": 1,
+      "post_title": "This is amazing new post lol",
+      "post_likes": 234,
+      "post_user": "Bikrant J."
+    },
+    {
+      "post_id": 2,
+      "post_title": "I am not good today",
+      "post_likes": 123,
+      "post_user": "Ramu K."
+    },
+    {
+      "post_id": 3,
+      "post_title": "Summer is so hot ",
+      "post_likes": 2343,
+      "post_user": "Shyamu L."
+    },
+    {
+      "post_id": 4,
+      "post_title": "Winter is too cold ok?",
+      "post_likes": 3,
+      "post_user": "Hari M."
+    },
+    {
+      "post_id": 5,
+      "post_title": "Everyone is busy in their own work",
+      "post_likes": 739,
+      "post_user": "Geeta N."
+    }
+  ]
+}
