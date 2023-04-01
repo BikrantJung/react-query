@@ -3,13 +3,14 @@ import { PostsEntity } from "../../../types";
 import { axios } from "../../../lib/axios";
 
 async function getPosts(): Promise<PostsEntity[]> {
-  return await axios.get("posts/");
+  const { data } = await axios.get("posts/");
+  return data;
 }
 
 export const useFetchPosts = () => {
   return useQuery(["posts"], getPosts, {
-    staleTime: 5 * 60 * 1000,
-    refetchInterval: 5 * 60 * 1000,
+    onError() {
+      console.log("OPPS ERROR FOUND");
+    },
   });
 };
-const { data } = useFetchPosts();

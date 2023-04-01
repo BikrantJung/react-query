@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "./components/home/Home.page";
 import TraditionalPage from "./components/traditional/Traditional.page";
 import ReactQuery from "./components/react-query-fetch/ReactQuery.page";
+import ParallelQueries from "./components/parallel-queries/ParallelQueries.page";
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
       {
         path: "/react-query-fetch",
         element: <ReactQuery />,
+      },
+      {
+        path: "/parallel-queries",
+        element: <ParallelQueries />,
       },
     ],
   },
