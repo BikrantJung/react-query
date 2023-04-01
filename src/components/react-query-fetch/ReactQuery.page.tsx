@@ -17,6 +17,7 @@ function ReactQuery() {
 
   const { data, isLoading } = useQuery<PostsEntity[]>(["posts"], getPosts, {
     staleTime: 5 * 60 * 1000,
+    refetchInterval: 5 * 60 * 1000,
   });
   if (isLoading) return <div>Loading...</div>;
   if (!data) return <div>Data not Found</div>;
